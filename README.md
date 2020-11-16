@@ -44,4 +44,4 @@ The following example game illustrates a player trying to guess the word hangman
 *The guessing player has lost this game as the diagram had been completed before all the letters were guessed.*
 
 
-source: http://everything.explained.today/Hangman_(game)/
+source: http://everything.explained.today/Hangman_(game)
