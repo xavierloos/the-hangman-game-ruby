@@ -6,6 +6,7 @@
 # A player has 3 attempts
 # if the player win o loses ask if it wants to play or add a new
 #word to the dictionary
+p "Hello"
 dictionary = ["Hello", "dictionary"]
 while true
   puts "Welcome to the HangMan Game"
