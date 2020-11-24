@@ -6,7 +6,6 @@
 # A player has 3 attempts
 # if the player win o loses ask if it wants to play or add a new
 #word to the dictionary
-p "Hello"
 dictionary = ["Hello", "dictionary"]
 while true
   puts "Welcome to the HangMan Game"
@@ -31,11 +30,17 @@ while true
     while true
       puts "\nGuess a letter"
       letter = gets.chomp
-      for x in random_array
-        if x == letter
-          i = random_array.index(x)
-          guess[i] = letter
-        end
+      # random_array.each do |x|
+      #   if x == letter
+      #     i = random_array.index(x)
+      #     guess[i] = letter
+      #   end
+      # end
+      index_found=[]
+      random_array.each_index.select{|x| index_found.push(x) if random_array[x] == letter}
+      # p index_found
+      for index in index_found 
+        guess[index] = letter
       end
       print guess.join(" ")
       break if letter == " "
